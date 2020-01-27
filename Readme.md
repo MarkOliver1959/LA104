@@ -7,8 +7,9 @@ This code and build files have been modified for STM32CubeIDE (by STmicroelectro
 
 ## New features
  
-**Address shift option** - This toggles with the I2c addresses (first byte) is right shifted before being displayed as data.
-I2c addresses are often left shifted and merged with the R/W bit before being shifted onto the i2c bus. This makes reading the raw data addresses difficult. This 
+**Address shift option** - This option enables the I2c address (first byte) to be displayed numerically as right shifted as data.
+
+I2c addresses are usually left shifted then merged with the R/W bit before being presented on the i2c bus. This makes reading the raw  addresses difficult. For example a sensor address of 0x41 would have been displayed as 0x82 or 0x83 depending on read or write. 
 
 **Note:** This firmware doesn't currently run under Gabinator's operating system as that is work in progress.
 
